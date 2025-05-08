@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Novotny - Developer Advocate</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f4f7f6; /* Light grey background */
+            color: #333; /* Dark grey text */
+        }
+        .container {
+            max-width: 1200px;
+        }
+        .section-heading {
+            position: relative;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .section-heading::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 3px;
+            width: 60px; /* Underline width */
+            background-color: #3b82f6; /* Blue underline */
+            border-radius: 1.5px;
+        }
+        .card {
+            background-color: #ffffff; /* White card background */
+            border-radius: 0.75rem; /* Rounded corners */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+            border-radius: 0.5rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.07);
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        /* Specific style for the featured video card */
+        .featured-video-card {
+             grid-column: span 1 / span 1; /* Default for small screens */
+        }
+        @media (min-width: 768px) { /* Medium screens and up */
+            .featured-video-card {
+                grid-column: span 2 / span 2; /* Make it span 2 columns */
+            }
+        }
+         @media (min-width: 1024px) { /* Large screens and up */
+            .featured-video-card {
+                grid-column: span 3 / span 3; /* Make it span 3 columns */
+            }
+        }
+    </style>
+</head>
+<body class="leading-normal tracking-normal">
+
+    <nav class="bg-white shadow-lg p-4 mt-4 mx-4 rounded-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="space-x-4">
+                <a href="#about" class="text-gray-600 hover:text-blue-600 transition duration-300">About</a>
+                <a href="#videos" class="text-gray-600 hover:text-blue-600 transition duration-300">Videos</a>
+                <a href="#blogs" class="text-gray-600 hover:text-blue-600 transition duration-300">Blogs</a>
+                <a href="#github" class="text-gray-600 hover:text-blue-600 transition duration-300">GitHub</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-gradient-to-r from-blue-500 to-indigo-600 text-white py-20 mt-4 mx-4 rounded-lg shadow-lg">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Alex Novotny</h1>
+            <p class="text-xl md:text-2xl">Senior Developer Advocate | AI Focus</p>
+        </div>
+    </header>
+
+    <main class="container mx-auto mt-8 px-4">
+
+        <section id="about" class="my-12">
+            <h2 class="text-3xl font-bold section-heading">About Me</h2>
+            <div class="card">
+                <p class="text-gray-700 mb-4">
+                    As a Senior Developer Advocate at Box, my focus is on the intersection of content and Artificial Intelligence. I empower developers by teaching them how to leverage Box APIs and cutting-edge AI technologies through engaging content, including technical blogs, video tutorials, sample code, and live demonstrations. I also take pride in mentoring team members and leading initiatives that expand our reach.
+                </p>
+                 <p class="text-gray-700 mb-4">
+                    I've significantly contributed to our developer relations social media presence, creating demos that have garnered millions of impressions and interactions. A key part of my role involves collaborating with major AI partners like OpenAI, Google, Weaviate, and Pinecone to build innovative content and integrations, including developing multiple RAG (Retrieval Augmented Generation) Agentic workflow demos utilizing Box for content storage.
+                </p>
+                 <p class="text-gray-700">
+                    Known for my ability to "get stuff done," I quickly master new technologies and effectively train others. My collaborative approach allows me to work seamlessly across all levels of an organization, from C-Suite executives to individual contributors, to achieve strategic goals.
+                </p>
+                <div class="mt-6">
+                    <h3 class="text-xl font-semibold mb-2">Key Achievements:</h3>
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li>Social Media Growth: Drove monthly content impressions up by millions across various platforms as the social media manager.</li>
+                        <li>Successful YouTube Series: Produced an AI-focused video series on the Box AI API, achieving tens of thousands of views.</li>
+                        <li>Strategic AI Partnerships: Led content partnerships with 10 major AI firms, significantly enhancing product integration and developer resources.</li>
+                        <li>Hackathon Leadership: Organized the Box Dev Hackathon, attracting 100 participants and achieving a 95% satisfaction rate.</li>
+                    </ul>
+                </div>
+                <div class="mt-6 text-center md:text-center">
+                    <a href="AlexNovotnyResume.pdf" download="AlexNovotnyResume.pdf" class="inline-block bg-blue-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-blue-700 transition duration-300">
+                       Download My Resume (PDF)
+                   </a>
+               </div>
+            </div>
+        </section>
+
+        <section id="videos" class="my-12">
+            <h2 class="text-3xl font-bold section-heading">Videos</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="card featured-video-card">
+                    <h3 class="text-xl font-semibold mb-3">How to setup the Box MCP Server</h3>
+                    <div class="video-container">
+                         <iframe src="https://www.youtube.com/embed/h109CMywlVQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="card">
+                     <h3 class="text-xl font-semibold mb-3">Box AI API Structured Metadata Extraction</h3>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/dU3oo4sHZt0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="card">
+                     <h3 class="text-xl font-semibold mb-3">Setting up an Agentic Workflow with Box and Pydantic</h3>
+                    <div class="video-container">
+                         <iframe src="https://www.youtube.com/embed/-290uDt3SWU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="card">
+                     <h3 class="text-xl font-semibold mb-3">Testing OpenAI's 4.1 mini</h3>
+                    <div class="video-container">
+                         <iframe src="https://www.youtube.com/embed/FW-PCSJNl88" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="card">
+                     <h3 class="text-xl font-semibold mb-3">Can Gemini 2.5 Pro Solve My Math Problem?</h3>
+                    <div class="video-container">
+                         <iframe src="https://www.youtube.com/embed/yXZ8w4hUd_s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                 <div class="card">
+                     <h3 class="text-xl font-semibold mb-3">Invoice Extraction with Grok3</h3>
+                    <div class="video-container">
+                         <iframe src="https://www.youtube.com/embed/td56phg0HG8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="card">
+                     <h3 class="text-xl font-semibold mb-3">How to setup the Box CLI</h3>
+                    <div class="video-container">
+                         <iframe src="https://www.youtube.com/embed/whxT3Bdx3E0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+        </section>
+
+        <section id="blogs" class="my-12">
+            <h2 class="text-3xl font-bold section-heading">Blogs</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="card">
+                    <h3 class="text-xl font-semibold mb-2">Box Skills OpenAI API TL;DR Summarization Tutorial</h3>
+                    <p class="text-gray-700 mb-3">A tutorial on using Box Skills with the OpenAI API for summarization.</p>
+                    <a href="https://medium.com/box-developer-blog/box-skills-openai-api-tl-dr-summarization-tutorial-cfe205169198" target="_blank" class="text-blue-600 hover:underline">Read Blog Post →</a>
+                </div>
+                 <div class="card">
+                    <h3 class="text-xl font-semibold mb-2">Weaviate Box RAG Recipe with Weaviate Query Agent</h3>
+                    <p class="text-gray-700 mb-3">Exploring a RAG recipe using Weaviate and Box with a Query Agent.</p>
+                    <a href="https://medium.com/box-developer-blog/weaviate-box-rag-recipe-with-weaviate-query-agent-1cb41cf9e68b" target="_blank" class="text-blue-600 hover:underline">Read Blog Post →</a>
+                </div>
+                <div class="card">
+                    <h3 class="text-xl font-semibold mb-2">Build a Content Portal using Box UI Elements, React, Tailwind CSS, Vercel, and Auth0 </h3>
+                    <p class="text-gray-700 mb-3">Part 3 of a series on building a content portal with Box UI Elements and modern web technologies.</p>
+                    <a href="https://medium.com/box-developer-blog/build-a-content-portal-using-box-ui-elements-react-tailwind-css-vercel-and-auth0-part-3-6833d4724bcc" target="_blank" class="text-blue-600 hover:underline">Read Blog Post →</a>
+                </div>
+                 <div class="card">
+                    <h3 class="text-xl font-semibold mb-2">Box Salesforce Flows with Metadata</h3>
+                    <p class="text-gray-700 mb-3">Using Box with Salesforce Flows and metadata.</p>
+                    <a href="https://medium.com/box-developer-blog/box-salesforce-flows-with-metadata-c8979b02acb1" target="_blank" class="text-blue-600 hover:underline">Read Blog Post →</a>
+                </div>
+                </div>
+        </section>
+
+        <section id="github" class="my-12">
+            <h2 class="text-3xl font-bold section-heading">GitHub Repositories</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="card">
+                    <h3 class="text-xl font-semibold mb-2">Box & OpenAI Agents SDK + Responses API</h3>
+                    <p class="text-gray-700 mb-3">Demonstration of using Box and OpenAI for insurance claim processing.</p>
+                    <a href="https://github.com/box-community/box-openai-insurance-claim-demo" target="_blank" class="text-blue-600 hover:underline">View Repository →</a>
+                </div>
+                 <div class="card">
+                    <h3 class="text-xl font-semibold mb-2">Box MCP Server</h3>
+                    <p class="text-gray-700 mb-3">Source code for the Box MCP server project.</p>
+                    <a href="https://github.com/box-community/mcp-server-box" target="_blank" class="text-blue-600 hover:underline">View Repository →</a>
+                </div>
+                 <div class="card">
+                    <h3 class="text-xl font-semibold mb-2">Box Pydantic Agentic Workflow</h3>
+                    <p class="text-gray-700 mb-3">Document generation with Pydantic, AI, Box, and MCP server.</p>
+                    <a href="https://github.com/box-community/doc-gen-pydantic-ai-box-mcp-server" target="_blank" class="text-blue-600 hover:underline">View Repository →</a>
+                </div>
+                 <div class="card">
+                    <h3 class="text-xl font-semibold mb-2">Box Custom Portal</h3>
+                    <p class="text-gray-700 mb-3">Demonstration of a custom Box portal with Auth0 integration.</p>
+                    <a href="https://github.com/box-community/box-custom-portal-demo-auth0" target="_blank" class="text-blue-600 hover:underline">View Repository →</a>
+                </div>
+                </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8 mt-12 mx-4 rounded-lg shadow-lg">
+        <div class="container mx-auto text-center">
+            <p>© 2025 Alex Novotny. All rights reserved.</p>
+            <div class="mt-4">
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/alex-robert-novotny/" target="_blank" class="text-blue-400 hover:underline">linkedin.com/in/alex-robert-novotny/</a></p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
