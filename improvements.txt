@@ -1,0 +1,20 @@
+I have took a role as Massive about nine months ago. You can find my updated work history in the profile.pdf file
+My new role is leading developer relations and marketing at the fintech startup. we need to update the page to add Massive into it. 
+Making sure to add a new section with the following video links - grab the titles from youtube and come up with any other text you think works. 
+
+https://youtu.be/lb3ePRgnDQA
+https://youtu.be/rTi27YYwH60
+https://youtu.be/iRxeFyOFimI
+https://youtu.be/bXrOeByNGZQ
+https://youtu.be/gT2LbeAkVCo
+https://youtu.be/jWLnIyrX-qA
+
+
+There is one video from box - the main one featured that doesn't work and needs removed. 
+
+Fintech blogs to feature 
+https://massive.com/blog/announcing-polygon-io-financials-balance-sheets-cash-flow-income-statements-and-ratios
+https://massive.com/blog/build-a-0-dte-covered-call-screener-for-spy-with-massive
+https://massive.com/blog/build-an-iron-condor-screener-with-massive
+
+I also need to update the downloaded resume. We need to add Massive stuff into it. 
