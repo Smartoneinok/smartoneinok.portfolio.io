@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alex Novotny — Resume</title>
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html { font-size: 11pt; }
+
+    body {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      color: #000;
+      background: #f0f0f0;
+      line-height: 1.4;
+    }
+
+    a { color: #000; }
+
+    .toolbar {
+      position: fixed; top: 0; left: 0; right: 0;
+      background: #000; color: #fff;
+      padding: 8px 16px; font-family: Arial, sans-serif; font-size: 12px;
+      display: flex; justify-content: space-between;
+    }
+    .toolbar a { color: #ccc; text-decoration: none; }
+    .toolbar a:hover { color: #fff; }
+
+    body { padding-top: 36px; }
+
+    .page {
+      max-width: 8.5in;
+      margin: 20px auto;
+      background: #fff;
+      padding: 0.6in;
+    }
+
+    h1 {
+      font-size: 18pt;
+      font-weight: bold;
+      margin-bottom: 4px;
+    }
+
+    .title {
+      font-size: 11pt;
+      margin-bottom: 4px;
+    }
+
+    .contact {
+      font-size: 10pt;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 11pt;
+      font-weight: bold;
+      margin: 18px 0 8px;
+      border-bottom: 1px solid #000;
+      padding-bottom: 2px;
+    }
+
+    .job { margin-bottom: 14px; }
+
+    .job-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 12px;
+    }
+
+    .job-head strong { font-size: 11pt; }
+
+    .job-dates {
+      font-size: 10pt;
+      white-space: nowrap;
+    }
+
+    .job-role {
+      font-size: 10pt;
+      font-style: italic;
+      margin-bottom: 2px;
+    }
+
+    .job-location {
+      font-size: 10pt;
+      margin-bottom: 4px;
+    }
+
+    .job-summary {
+      font-size: 10pt;
+      margin-bottom: 4px;
+    }
+
+    ul {
+      margin-left: 18px;
+      font-size: 10pt;
+    }
+
+    ul li { margin-bottom: 2px; }
+
+    .edu { font-size: 10pt; margin-bottom: 4px; }
+
+    @media print {
+      @page { size: letter; margin: 0.6in; }
+      body { padding: 0; background: #fff; }
+      .toolbar { display: none; }
+      .page { margin: 0; padding: 0; max-width: none; }
+      .job-head { break-after: avoid; }
+      .job-role { break-after: avoid; }
+      a { text-decoration: none; }
+    }
+
+    @media screen and (max-width: 640px) {
+      .page { margin: 10px; padding: 24px; }
+      .job-head { flex-direction: column; gap: 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="toolbar">
+    <a href="index.html">← portfolio</a>
+    <span>
+      <a href="#" onclick="window.print(); return false;">print</a>
+      &nbsp;·&nbsp;
+      <a href="AlexNovotnyResume.pdf" target="_blank">pdf</a>
+    </span>
+  </div>
+
+  <div class="page">
+
+    <h1>Alex Novotny</h1>
+    <p class="title">Head of Developer Relations &amp; Marketing at Massive</p>
+    <p class="contact">
+      alexanderrobertnovotny@gmail.com ·
+      <a href="https://www.linkedin.com/in/alex-robert-novotny">linkedin.com/in/alex-robert-novotny</a> ·
+      Austin, Texas Metropolitan Area
+    </p>
+
+    <h2>Experience</h2>
+
+    <div class="job">
+      <div class="job-head">
+        <strong>Massive</strong>
+        <span class="job-dates">June 2025 – Present</span>
+      </div>
+      <p class="job-role">Head of Developer Relations &amp; Marketing</p>
+      <p class="job-location">Austin, TX</p>
+      <p class="job-summary">Kickstarted developer relations at Massive from scratch by leading a small team, executing multiple marketing campaigns, and serving as the internal voice of the developer. Contributed millions of impressions across social channels to increase brand awareness. Influenced customer conversions from free to paid.</p>
+      <ul>
+        <li>Led the developer relations function</li>
+        <li>Led all marketing efforts across the company</li>
+        <li>Oversaw the planning and completion of our company rebrand from Polygon.io to Massive.com</li>
+        <li>Completed multiple Public Relations initiatives with NYSE, Nasdaq, TMX, ETF Global and Benzinga</li>
+        <li>Independently created demos, wrote blogs, recorded videos, and managed social media channels</li>
+        <li>Interviewed developers about pain points and took that feedback to engineering</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-head">
+        <strong>Box</strong>
+        <span class="job-dates">April 2023 – June 2025</span>
+      </div>
+      <p class="job-role">Senior Developer Advocate</p>
+      <p class="job-location">Austin, Texas</p>
+      <p class="job-summary">Taught developers Box APIs and AI through various developer relations activities, including blogs, videos, sample code, and live demos, while serving as a team mentor and lead.</p>
+      <ul>
+        <li>Served as our developer relations social media manager, posting everyday on multiple platforms, gathering 100s of thousands of impressions, reposts, and likes</li>
+        <li>Created content, enhancements, and sample code alongside at least 10 major AI partners, including but not limited to OpenAI, Google, Weaviate, Pinecone, and Salesforce</li>
+        <li>Coded multiple RAG Agentic workflow demos, using Box as the content storage location</li>
+        <li>Helped code the Box developer MCP server</li>
+        <li>Wrote, recorded, and launched a new YouTube video series on the new Box AI API, now with over 5000 views</li>
+        <li>Wrote 35 Medium blogs garnering over 9,500 views</li>
+        <li>Attended conferences like Google Next, Salesforce TDX, Box Works and Langchain Interrupt, working the booth and speaking live with 100s of developers</li>
+        <li>Created and recorded multiple remote sessions for Box virtual events, like Cloud Content Summit and Box Works</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-head">
+        <strong>Box</strong>
+        <span class="job-dates">April 2021 – April 2023</span>
+      </div>
+      <p class="job-role">Developer Evangelist II</p>
+      <p class="job-location">Austin, Texas</p>
+      <p class="job-summary">Taught developers Box APIs through various developer relations activities, including documentation, blogs, videos, sample code, and live demos.</p>
+      <ul>
+        <li>Served as the interim Box developer relations lead for six months after company attrition</li>
+        <li>Conducted over 25 interviews to expand the team</li>
+        <li>Wrote over 15 medium blog posts with over 5000 views</li>
+        <li>Helped plan our team's first public Hackathon, as well as mentored the three teams on technical questions</li>
+        <li>Created and presented a developer relations strategy and expansion plan to upper leadership</li>
+        <li>Wrote, recorded, and launched a new YouTube video series on Box API topics, now with over 3000 views</li>
+        <li>Responded to over 1000 developer questions on the Box Platform community forum</li>
+        <li>Served as the SME for Box Skills in over 10 customer calls</li>
+        <li>Coded over 200 documentation releases on developer.box.com visited by over 40,000 people a month</li>
+        <li>Created a ChatGPT demo and presented the solution to the C-suite</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-head">
+        <strong>Box</strong>
+        <span class="job-dates">October 2019 – April 2021</span>
+      </div>
+      <p class="job-role">Technical Consultant</p>
+      <p class="job-location">Austin, Texas</p>
+      <p class="job-summary">Led or participated in over 75 Box Consulting engagements, including API Enablement, SSO, Shuttle, Transform, Shield, Keysafe, Integration, Enterprise ID Merge, and User Analysis projects.</p>
+      <ul>
+        <li>Worked with peers to create a scalable small business administration loan application integration with Box for the first Covid-19 government stimulus package</li>
+        <li>Developed and presented a repeatable developer enablement flow based around the Box CLI</li>
+        <li>Used the Box Salesforce SDK to create custom folders programmatically for customers</li>
+        <li>Sold 10+ phase 2 Box Consulting engagements totaling over $100,000 in revenue</li>
+        <li>Co-led the Content Migration Best Practices Box Works 2020 presentation</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-head">
+        <strong>Texas Education Agency</strong>
+        <span class="job-dates">April 2019 – October 2019</span>
+      </div>
+      <p class="job-role">Tools Administrator (Programmer V)</p>
+      <p class="job-location">Austin, Texas</p>
+      <p class="job-summary">Technical lead responsible for the installation, configuration, and upgrades of Jira, Zendesk, Qualtrics, Azure DevOps, Ipswitch, Teamforge, and ArcGIS.</p>
+      <ul>
+        <li>Saved the agency over $100,000 by creating an excel macro to meet a short three month legislative deadline</li>
+        <li>Coded python scripts to migrate data between instances for reporting purposes using Zendesk's REST API</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-head">
+        <strong>Google</strong>
+        <span class="job-dates">October 2018 – April 2019</span>
+      </div>
+      <p class="job-role">Tools Administrator (TVC)</p>
+      <p class="job-location">Austin, Texas</p>
+      <p class="job-summary">Managed a suite of Google Shopping applications, overseeing the full project life cycle, and communicated daily with stakeholders to advance application roadmaps and gather requirements from a wide range of Google users.</p>
+      <ul>
+        <li>Investigated bugs for over 10 tools and worked directly with engineering to create action plans to address them</li>
+        <li>Streamlined metric monitoring and used Google PLX to implement dashboards allowing users to track success down to the granular level of a ticket</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-head">
+        <strong>Koch Industries</strong>
+        <span class="job-dates">October 2016 – September 2018</span>
+      </div>
+      <p class="job-role">Software Developer</p>
+      <p class="job-location">Wichita, Kansas</p>
+      <p class="job-summary">Primary support developer for over 15 applications. Investigated and solved hundreds of bugs using the .Net stack. Led a team of 10 in university IT recruitment.</p>
+      <ul>
+        <li>Migrated 5 applications to AWS which included creating EC2 instances, S3 buckets, load balancers, DNS management, other database upgrades</li>
+        <li>Migrated over 10 ETL integrations from our legacy integration tool called Informatica to Dell Boomi and mentored interns on cloud based technology</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-head">
+        <strong>Quorum Software</strong>
+        <span class="job-dates">June 2015 – September 2016</span>
+      </div>
+      <p class="job-role">Software Developer</p>
+      <p class="job-location">Dallas, Texas</p>
+      <p class="job-summary">Primary support developer for over 5 applications and 50 clients, while serving as a technical liaison to clients and participating in university IT recruiting efforts.</p>
+      <ul>
+        <li>Collaborated with team to code an integration solution in C# that moves data between land systems and an oil revenue allocation processor</li>
+        <li>Provided on site support by creating SQL scripts to convert data to Quorum software</li>
+      </ul>
+    </div>
+
+    <h2>Education</h2>
+    <p class="edu"><strong>Oklahoma State University</strong> — Master of Business Administration (MBA)</p>
+    <p class="edu"><strong>Southern Arkansas University</strong> — Bachelor of Arts (BA), Theatre/Theater</p>
+
+  </div>
+</body>
+</html>
